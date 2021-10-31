@@ -3,6 +3,9 @@
 
 
 int main() {
+    //char MessageCharArray[38] = {"\"\\\\//\"C:\\My%20user\\\"ex%%%%1.c\"\\\\\\*//\""};
+    // MessageCharArray[37] = 0;
+    
     // std::cout << " hello world";
     // printf('%d' 1);
    enum test {zero = 0, one, two, three, four, five, six, seven};

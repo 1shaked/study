@@ -4,13 +4,10 @@
 
 #include <stdio.h>
 int main() {
-    char MessageCharArray[38] = {"\"\\\\//\"C:\\My%20user\\\"ex%%%%1.c\"\\\\\\*//\""};
-    // MessageCharArray[37] = 0;
-    printf("%s \n", MessageCharArray);
+    // the first part to print
     printf("\"\\\\//\"c:\\My%%20user\\\"ex%%%%%%%%1.c\"\\\\\\*//\"\n");
-    // printf("\"\\\\//\"C:\\My%20user\\\"ex%%%%1.c\"\\\\\\*//\"");
     
-    
+    // second part enter 3 numbers
     int a, b, c;
     printf("Enter 3 numbers: \n");
     scanf("%d", &a);
@@ -23,7 +20,7 @@ int main() {
     printf("The div of b and c is: %d \n", b / c);
     printf("The mod of b and c is: %d \n", b % c);
 
-
+    // step number 3 enter seconds to time
     int hours,minutes, total_minutes, seconds, secondsInput;
     const int interval = 60;
     printf("Enter a number of seconds: ");
@@ -34,17 +31,17 @@ int main() {
     minutes = total_minutes % interval;
     seconds = secondsInput % interval;
     printf("secondsInput %d hours = %d minutes = %d seconds = %d \n",secondsInput, hours, minutes, seconds);
-
+    // enter decade number
     printf("Enter decade number \n");
     int decade;
 
     scanf("%d", &decade);
     printf("The 50 best songs of the '%d0s \nTop songs of 19%d0\n",decade, decade);
-    // printf("The 50 best songs of the %d 0", decade);
-    // printf("Top songs of 19 %d 0");
-    char word[3];
+    
+    // last part 3 letter word
+    char word [3];
     printf("Enter a three-letter word:\n");
-    scanf("%s", &word);
+    scanf("%3s", &word);
     int sum = 0;
 
     for (int i = 0; i < sizeof(word); i++) {
@@ -52,5 +49,5 @@ int main() {
     } // I can create 3 vars and sum them the same way but this solution is not good for n letters if you will ask in the future.
     // ha ha I am doing it for a living hope you enjoy it Shaked chen
     
-    printf("last stage %s\nThe Sum is : %d \n", word, sum);
+    printf("The sum of the ASCII values is:  %d \n", sum);
 }

@@ -41,7 +41,7 @@ int main() {
     // last part 3 letter word
     char word [3];
     printf("Enter a three-letter word:\n");
-    scanf("%3s", &word);
+    scanf("%s", word);
     int sum = 0;
 
     for (int i = 0; i < sizeof(word); i++) {
